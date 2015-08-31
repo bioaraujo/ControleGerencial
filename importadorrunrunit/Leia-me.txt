@@ -1,0 +1,6 @@
+﻿O objetivo desse executável é realizar a leitura das planilhas "Status reporte" e "timesheet", geradas pelo RunRunIT
+e Importa-las no bando de dados previamente configurado.
+
+
+Fabio Bezerra
+09/02/2015

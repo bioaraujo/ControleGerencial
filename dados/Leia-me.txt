@@ -1,0 +1,14 @@
+﻿Esse projeto tem o objetivo de ser uma "ponte" entre as aplicações da solução e qualquer fonte de dados.
+
+Todo tipo de requisição e envio dos dados utilizados pelas aplicações deve ser feita por essa ponte.
+
+Importante:
+Essa dll não conhece os "modelos" de dados utilizados( "tabelas, planilhas, etc") fica restrita apenas a executar os comandos enviados pela 
+aplicação na paltaforma de dados disponível.
+
+Importante II:
+Para a conexão com o Excel,é necessário a instalação do "AccessDatabaseEngine.exe". Esse é um pacote de drivers oficial da Microsoft 
+obtido em : http://www.microsoft.com/en-us/download/details.aspx?id=13255
+
+Fabio Bezerra
+09/02/2015
