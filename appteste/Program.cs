@@ -6,6 +6,7 @@ using System.IO;
 using System.Data;
 using FonteDeDados;
 using Util;
+using Util.Log;
 
 namespace APPTeste
 {
@@ -135,10 +136,12 @@ namespace APPTeste
         static void TesteUtil() { 
             //Metdod para tester o Util
 
-            Console.Write("Escreva alguma coisa");
+            Console.Write("Escreva alguma coisa para ser gravado no LOG"+"\n");
             string valordigitado = Console.ReadLine();
 
-            Console.WriteLine(valordigitado);
+            Logger.GravarLogExcecao(valordigitado);
+
+            Console.WriteLine("Voce digitou " + valordigitado);
 
             Console.ReadLine();
 

@@ -113,6 +113,10 @@
       <Project>{81A01908-2288-48B6-8ED9-A1A6323BEBE1}</Project>
       <Name>FonteDeDados</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{1492f196-9893-4742-a864-f8fafafd4709}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
