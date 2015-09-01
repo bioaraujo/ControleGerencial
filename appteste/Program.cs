@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Data;
-using Dados;
+using FonteDeDados;
+using Util;
 
 namespace APPTeste
 {
@@ -14,7 +15,9 @@ namespace APPTeste
         {
             //TestePadrao();
             //TesteDataTable();
-            TesteDataTableFonteDeDados();
+            //TesteDataTableFonteDeDados();
+
+            TesteUtil();
         }
 
 
@@ -126,6 +129,19 @@ namespace APPTeste
         
             //To Do
         
+        }
+
+
+        static void TesteUtil() { 
+            //Metdod para tester o Util
+
+            Console.Write("Escreva alguma coisa");
+            string valordigitado = Console.ReadLine();
+
+            Console.WriteLine(valordigitado);
+
+            Console.ReadLine();
+
         }
 
     }

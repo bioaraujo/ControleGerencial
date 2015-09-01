@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 using System.IO;
 
 
-namespace Dados
+namespace FonteDeDados
 {
     public enum TipoFonteDados
     {

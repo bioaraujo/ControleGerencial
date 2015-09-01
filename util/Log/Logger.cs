@@ -1,11 +1,13 @@
 ﻿using System;
 using System.IO;
+using System.Configuration;
 using System.Net;
 
 namespace Util.Log
 {
     public static class Logger
     {
+        
         /// <summary>
         /// Responsável pela gravação do arquivo de Log.
         /// </summary>
@@ -15,7 +17,8 @@ namespace Util.Log
             StreamWriter sw = null;
             try
             {
-                string localGravacaoArquivo = new Registro().PathLog;
+                string localGravacaoArquivo = ConfigurationManager.AppSettings["CAMINHO_LOG"];
+
                 string nomeArquivo = "Log" + System.Reflection.Assembly.GetEntryAssembly().GetName().Name.Trim() + ".html";
                 DirectoryInfo dir = new DirectoryInfo(localGravacaoArquivo);
 
@@ -71,7 +74,7 @@ namespace Util.Log
             StreamWriter sw = null;
             try
             {
-                string localGravacaoArquivo = new Registro().PathLog;
+                string localGravacaoArquivo = ConfigurationManager.AppSettings["CAMINHO_LOG"];
                 string nomeArquivo = "Notificacoes" + System.Reflection.Assembly.GetEntryAssembly().GetName().Name.Trim() + ".html";
                 DirectoryInfo dir = new DirectoryInfo(localGravacaoArquivo);
 

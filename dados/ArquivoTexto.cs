@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using Util.Ocorrencia;
 
-namespace Dados
+namespace FonteDeDados
 {
     /// <summary>
     /// Classe destina a ser a se conecatar com arquivo texto e retornar o conteudo em formatos pré-determindados.
